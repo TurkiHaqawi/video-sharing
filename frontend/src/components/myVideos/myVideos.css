@@ -1,0 +1,15 @@
+.myVideos {
+    height: inherit;
+    background: #5F71AF;
+    border-radius: 10px;
+}
+.myVideos > div {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.add {
+    width: 3%;
+}

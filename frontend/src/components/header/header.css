@@ -1,0 +1,67 @@
+/* ******************* Home section *************** */
+section {
+  padding: 100px 200px;
+}
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* max-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home:before {
+  z-index: 777;
+  content: "";
+  position: absolute;
+  background: rgba(3, 94, 251, 0.112);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.home .content {
+  z-index: 888;
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+}
+.home .content h1 {
+  font-size: 8em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Monoton', cursive;
+}
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.home .media-icons i {
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+
+.home .media-icons i:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home .media-icons i:hover {
+  transform: scale(1.3);
+}
+
+.home video {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

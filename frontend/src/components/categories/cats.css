@@ -1,0 +1,35 @@
+.cats {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.eachCat {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 50px 15px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.eachCat:not(:last-child) {
+    margin-right: 20px;
+}
+.art {
+    background: #63AEF2;
+}
+.music {
+    background: #F9964F;
+}
+.dance {
+    background: #FF3F3F; 
+}
+.catSection {
+    text-align: center;
+}
+.catSection span {
+    position: relative;
+    top: -150px;
+}

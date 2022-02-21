@@ -1,0 +1,42 @@
+.trending {
+    height: inherit;
+    background: #AF84E6;
+    padding-bottom: 35px;
+    border-radius: 10px;
+}
+.sectionTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0px 20px 20px
+}
+.trendingVideos {
+    width: 90%;
+    margin: 0 auto;
+    height: 40vh;
+    background: #5f399117;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.video {
+    max-width: 40%;
+    height: 70%;
+    position: relative;
+    margin: 10px 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.likeIcon {
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: -85%;
+    left: 80%;
+    cursor: pointer;
+}

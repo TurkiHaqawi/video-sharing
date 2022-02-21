@@ -1,0 +1,76 @@
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  transition: 0.5s ease;
+  background: rgba(3, 94, 251, 0.112);
+}
+.logo {
+  height: inherit;
+  width: 9%;
+}
+header .navigation {
+  position: relative;
+}
+header .navigation .navigation-items {
+  display: flex;
+}
+header .navigation .navigation-items span {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+header .navigation .navigation-items span:before {
+  content: "";
+  position: absolute;
+  background: red;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+header .navigation .navigation-items span:hover:before {
+  width: 100%;
+}
+.menu-btn {
+  display: none;
+}
+.searchBar {
+  width: 20%;
+  background: rgba(255, 255, 255, 0.714);
+  border-radius: 30px;
+}
+.searchBar input {
+  padding: 10px;
+  width: 90%;
+  border-radius: 30px;
+  border: none;
+  background: none;
+}
+.searchBar i {
+  position: relative;
+  cursor: pointer;
+}
+.userSettingPage {
+  font-size: 19px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
