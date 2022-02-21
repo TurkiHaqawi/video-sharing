@@ -7,11 +7,11 @@ const postRoute = require("./routes/post");
 const path = require("path");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const PORT = process.env.PORT || 8080;
 dotenv.config();
 app.use(express.json());
 app.use(cors());
 app.use(express.static("frontend/build"));
-const PORT = process.env.PORT || 8080;
 
 // MongooDB Connection
 mongoose
@@ -25,7 +25,7 @@ app.use("/api/user", userRoute);
 app.use("/api/posts", postRoute);
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "clint/build/index.html"));
+  res.sendFile(path.resolve(__dirname, "frontend/build/index.html"));
 });
 
 app.listen(PORT, () => console.log("Server up to running"));
